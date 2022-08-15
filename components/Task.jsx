@@ -1,5 +1,5 @@
-import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 const Task = (props) => {
     return (
@@ -10,7 +10,7 @@ const Task = (props) => {
             </View>
             <View style={styles.circular}></View>
         </View>
-    );
+    )
 }
 
 const styles = StyleSheet.create({
@@ -24,10 +24,9 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     itemLeft: {
-        flexdirection: 'row',
+        flexDirection: 'row',
         alignItems: 'center',
-        flexWrap: 'wrap',
-
+        flexWrap: 'wrap'
     },
     square: {
         width: 24,
@@ -39,7 +38,6 @@ const styles = StyleSheet.create({
     },
     itemText: {
         maxWidth: '80%',
-
     },
     circular: {
         width: 12,
@@ -47,7 +45,6 @@ const styles = StyleSheet.create({
         borderColor: '#55BCF6',
         borderWidth: 2,
         borderRadius: 5,
-
     },
 });
 
